@@ -24,7 +24,8 @@
       <div class="card-footer">
         <button id="generateBtn" class="btn">Generate Password</button>
         <label for="length">Password Length</label>
-        <input type="number" id="length" min="8" max="128" value="128" />
+        <input type="number" id="length" min="8" max="128" value="128"
+          onKeyUp="if(this.value>128){this.value='128';}else if(this.value<8){this.value='8';}" id="yourid" />
       </div>
       <div class="setting">
         <label for="length">Include Lowercase Letters</label>
